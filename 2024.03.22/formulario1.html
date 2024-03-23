@@ -2,13 +2,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Cadastro</title>
+    <title>Document</title>
 </head>
 
 <body>
     <form>
         <label for="txtNome">Nome:</label>
-        <input id="txtNome" type="text" placeholder="Digite seu nome completo">
+        <input id="txtNome" type="text" placeholder="Digite seu nome completo" required>
 
         <br><br>
         <label for="txtSenha">Senha:</label>
@@ -29,11 +29,11 @@
 
             <br>
             <label for="txtEmail">Email:</label>
-            <input id="txtEmail" type="email" placeholder="exemplo@exemplo.com">
+            <input id="txtEmail" type="email" placeholder="exemplo@exemplo.com" required>
 
             <br><br>
             <label for="txtSite">Site:</label>
-            <input id="txtSite" type="url" placeholder="http://www.examplo.com">
+            <input id="txtSite" type="url" placeholder="http://www.examplo.com" required>
         </fieldset>
 
         <br><br>
@@ -64,6 +64,11 @@
 
         <input id="language3" type="checkbox">
         <label for="language3">JavaScript</label>
+
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+        <input type="button" value="cancelar" onclick="alert('Tem certeza?')">
 
     </form>
 </body>
