@@ -1,0 +1,100 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Cadastro de clientes</h1>
+    <p style="color:red">Todos os campos são de preenchimento obrigatório</p>
+
+    <form>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <label for="txtNome">Nome:</label>
+            <input id="txtNome" type="text" placeholder="Nome completo" required>
+
+            <br><br>
+            <label for="txtDataNasc">Data de nascimento:</label>
+            <input id="txtDataNasc" type="date" required>
+
+            <br><br>
+            <label for="">Sexo:</label>
+            <input id="masc" type="radio" name="sexo" required><label for="masc">Masculino</label>
+            <input id="fem" type="radio" name="sexo" required><label for="fem">Feminino</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Informações de contato</legend>
+
+            <label for="txtEmail">Email:</label>
+            <input id="txtEmail" type="email" required>
+
+            <br><br>
+            <label for="txtNroCel">Telefone celular:</label>
+            <input id="txtNroCel" type="text" pattern="\d{9}" maxlength="9" placeholder="Apenas números (máx: 9)" required>
+
+            <br><br>
+            <label for="txtSite">Website pessoal/profissional:</label>
+            <input id="txtSite" type="url" required>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Localização:</legend>
+
+            <label for="txtEnd">Endereço:</label>
+            <input id="txtEnd" type="text" required>
+
+            <br><br>
+            <label for="txtNro">Número:</label>
+            <input id="txtNro" type="number" placeholder="(Valor entre 1 e 9999)" min="1" max="9999" required>
+
+            <br><br>
+            <label for="txtCidade">Cidade:</label>
+            <input id="txtCidade" type="text" required>
+
+            <br><br>
+            <label for="txtEst">Estado:</label>
+            <select id="txtEst" required>
+                <option value="" disabled selected>Selecione</option>
+                <option>Acre (AC)</option>
+                <option>Alagoas (AL)</option>
+                <option>Amapá (AP)</option>
+                <option>Amazonas (AM)</option>
+                <option>Bahia (BA)</option>
+                <option>Ceará (CE)</option>
+                <option>Espírito Santo (ES)</option>
+                <option>Goiás (GO)</option>
+                <option>Maranhão (MA)</option>
+                <option>Mato Grosso (MT)</option>
+                <option>Mato Grosso do Sul (MS)</option>
+                <option>Minas Gerais (MG)</option>
+                <option>Pará (PA)</option>
+                <option>Paraíba (PB)</option>
+                <option>Paraná (PR)</option>
+                <option>Pernambuco (PE)</option>
+                <option>Piauí (PI)</option>
+                <option>Rio de Janeiro (RJ)</option>
+                <option>Rio Grande do Norte (RN)</option>
+                <option>Rio Grande do Sul (RS)</option>
+                <option>Rondônia (RO)</option>
+                <option>Roraima (RR)</option>
+                <option>Santa Catarina (SC)</option>
+                <option>São Paulo (SP)</option>
+                <option>Sergipe (SE)</option>
+                <option>Tocantins (TO)</option>
+            </select>
+            
+        </fieldset>
+
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+
+</html>
