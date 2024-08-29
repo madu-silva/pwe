@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    padding: 10px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+.menu a:hover {
+    background-color: white;
+    color: black;
+    background-repeat: no-repeat;
+}
+
+.menu a.html5:hover {
+    background-image: url(img/.html5.png);
+}
+
+.menu a.css3:hover {
+    background-image: url(img/css3.png);
+}
+
+.menu a.javascript:hover {
+    background-image: url(img/javascript.png);
+}
+
+main section {
+    text-align: center;
+    width: 100%;
+    width: 1200px;
+}
+h1 {
+    font-size: 40px;
+    margin-top: 15px;
+}
+h3 {
+    color: red;
+    font-size: 20px;
+}
+h2 {
+    color: green;
+}
+
+section {
+    text-align: center;
+}
+
+.secao1 img {
+    width: 70px;
+    margin-top: 35px;
+}
+
+.secao1 div {
+    width: 20%;
+    margin-top: 10px;
+}
+
+.secao1 .container {
+     background-color: lightgray;
+}
+
+.secao2 div {
+    width: 50%;
+    text-align: center;
+}
+.secao2 img {
+    text-align: center;
+    width: 300px;
+}
+.secao2 p {
+    text-align: left;
+    margin-bottom: 10px;
+    /* margin-left: 100px;
+    margin-right: 100px; */
+}
+
+.secao1 p {
+    margin-bottom: 10px;
+}
+
+
+.container {
+
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* width: 1200px; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.containerFundo {
+    background-color: rgb(235, 231, 231);
+    width:100% ;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+a {
+    border: 1px solid black;
+    width: 100px;
+    height: 35px;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    text-align: center;
+    padding-top: 40px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+    position: relative;
+    
+    }
