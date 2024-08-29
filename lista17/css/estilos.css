@@ -1,0 +1,141 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: arial;
+}
+
+main section {
+    width: 1200px;
+    /* margem automatica para ficar centralizada */
+    margin: auto;
+    padding: 50px;
+}
+
+main section h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+main section p {
+    /* define a margem pelo sentido vertical e horizontal */
+    margin: 20px 0px;
+    /* para deixar os p ajustados(retos) dos dois lados */
+    text-align: justify;
+}
+
+.destaque {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+main section button {
+    color: white;
+    padding: 10px 20px;
+    /* arrendondar as bordas do botão */
+    border-radius: 5px;
+    /* remover a borda do botão */
+    border: none;
+}
+
+main section button:hover {
+    background-color: orangered;
+    cursor: pointer;
+}
+
+.botaoPreto {
+    background-color: black;
+}
+
+.botaoAzul {
+    background-color: darkblue;
+}
+
+main section h2 {
+    margin: 20px 0px;
+    font-weight: bold;
+}
+
+/* para definir caracteristicas nas sections que foram na posicao impar */
+main section:nth-of-type(odd) {
+   background-color: lightgray;
+}
+
+/* para definir caracteristicas nas sections que foram na posicao par */
+main section:nth-of-type(even) {
+    background-color: white;
+ }
+
+.container {
+    /* propriedades padroes display e display flex*/
+    display: flex;
+    flex-direction: row;
+}
+
+.container > div{
+    width: 100%;
+    padding: 30px;
+    text-align: justify;
+    text-align: center;
+}
+
+.servicos div {
+    text-align: center;
+}
+
+/* leva em consideração o pai */
+.servicos img {
+    width: 100%;
+}
+
+div p {
+    text-align: justify;
+}
+
+
+.image img {
+    max-width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content:center;
+    background-color:darkblue;
+}
+
+header nav ul li {
+    list-style: none;
+    padding:20px;
+    text-align: center;
+}
+
+header nav ul li a:link, header nav ul li a:visited {
+    text-decoration: none;
+    color: white;
+    padding: 0px 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header img {
+    display: block;
+    margin: auto;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 50px;
+}
+footer p {
+    color: white;
+}
