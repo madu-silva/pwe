@@ -47,10 +47,9 @@ nav {
     background-image: url(img/javascript.png);
 }
 
-main section {
+section {
     text-align: center;
     width: 100%;
-    width: 1200px;
 }
 h1 {
     font-size: 40px;
@@ -93,12 +92,14 @@ section {
 .secao2 p {
     text-align: left;
     margin-bottom: 10px;
-    /* margin-left: 100px;
-    margin-right: 100px; */
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .secao1 p {
     margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 
